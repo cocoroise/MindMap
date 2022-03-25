@@ -1,9 +1,10 @@
-import { RouteRecordRaw } from 'vue-router'
+import type { RouteRecordRaw } from 'vue-router';
+
 const MainRouter: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Main',
-    component: () => import(/* webpackChunkName: "userManager" */'@/componens/HelloWorld.vue')
+    component: () => import(/* webpackChunkName: "mind" */'@/components/mind.vue')
   }
 ]
 export default MainRouter

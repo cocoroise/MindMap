@@ -16,7 +16,9 @@
     "types": [
       "node",
       "webpack-env",
-      "jest"
+    ],
+    "typeRoots": [
+      "src/globalDeclare"
     ],
     "paths": {
       "@/*": [
