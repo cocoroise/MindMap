@@ -3,5 +3,5 @@ export interface MainState {
 }
 
 export const state: MainState = {
-  name: '',
+  name: ''
 }

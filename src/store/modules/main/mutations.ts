@@ -9,5 +9,5 @@ export type Mutations<S = MainState> = {
 export const mutations: MutationTree<MainState> & Mutations = {
   [MainMutationTypes.SET_NAME](state: MainState, name: string) {
     state.name = name
-  },
+  }
 }

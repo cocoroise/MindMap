@@ -1,29 +1,31 @@
 module.exports = {
   root: true,
   env: {
-    node: true,
+    node: true
   },
   extends: [
     'plugin:vue/vue3-strongly-recommended',
     '@vue/standard',
-    '@vue/typescript/recommended',
+    '@vue/typescript/recommended'
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    ecmaVersion: 2020
   },
   rules: {
+    semi: 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/ban-types': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/member-delimiter-style': ['error',
       {
         multiline: {
-          delimiter: 'none',
+          delimiter: 'none'
         },
         singleline: {
-          delimiter: 'comma',
-        },
+          delimiter: 'comma'
+        }
       }],
     '@typescript-eslint/no-explicit-any': 'off',
     'space-before-function-paren': ['error', 'never'],
@@ -43,10 +45,10 @@ module.exports = {
       'error',
       {
         allowDestructuring: true, // Allow `const { props, state } = this`; false by default
-        allowedNames: ['self'], // Allow `const self = this`; `[]` by default
-      },
+        allowedNames: ['self'] // Allow `const self = this`; `[]` by default
+      }
     ],
     'vue/attribute-hyphenation': 'off',
-    'vue/custom-event-name-casing': 'off',
-  },
+    'vue/custom-event-name-casing': 'off'
+  }
 };

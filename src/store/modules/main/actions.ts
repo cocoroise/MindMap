@@ -25,5 +25,5 @@ export const actions: ActionTree<MainState, RootState> & Actions = {
     setTimeout(() => {
       commit(MainMutationTypes.SET_NAME, '拿铁喵喵')
     }, 300)
-  },
+  }
 }

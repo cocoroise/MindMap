@@ -31,5 +31,5 @@ export type MainStore<S = MainState> = Omit<VuexStore<S>, 'getters' | 'commit' |
 export const store: Module<MainState, RootState> = {
   state,
   mutations,
-  actions,
+  actions
 }
