@@ -1,0 +1,29 @@
+{
+    "type":"node",
+    "name":"父节点",
+    "children":[
+        {
+            "type":"node",
+            "name":"node1",
+            "children":[
+                {
+                    "type":"node",
+                    "name":"node4"
+                },
+                {
+                    "type":"content",
+                    "name":"content1",
+                    "path":"docs/test.md"
+                }
+            ]
+        },
+        {
+            "type":"node",
+            "name":"node2"
+        },
+        {
+            "type":"node",
+            "name":"node3"
+        }
+    ]
+}
